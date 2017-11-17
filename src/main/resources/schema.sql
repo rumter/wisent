@@ -1,0 +1,4 @@
+CREATE TABLE sample_table (
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  data TEXT
+);
