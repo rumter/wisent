@@ -1,4 +1,4 @@
-CREATE TABLE sample_table (
+CREATE TABLE IF NOT EXISTS sample_table (
   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   data TEXT
 );

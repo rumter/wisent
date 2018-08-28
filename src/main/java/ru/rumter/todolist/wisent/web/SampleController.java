@@ -24,4 +24,11 @@ public class SampleController {
         return "Hello " + sampleDAO.getData(1) + "!";
     }
 
+    @RequestMapping(value = "edit", method = RequestMethod.GET, produces = MediaType.TEXT_PLAIN_VALUE)
+    public String edit() {
+        sampleDAO.updateData(1, "updated data " + System.currentTimeMillis());
+
+        return "Hello " + sampleDAO.getData(1) + "!";
+    }
+
 }

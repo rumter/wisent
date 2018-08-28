@@ -1,1 +1,0 @@
-INSERT INTO sample_table (data) VALUES ('data 1')

@@ -16,4 +16,8 @@ public class SampleDAO {
         return jdbcTemplate.queryForObject("SELECT data FROM sample_table WHERE id=?", String.class, id);
     }
 
+    public void updateData(int id, String data) {
+        jdbcTemplate.update("UPDATE sample_table SET data=? WHERE id=?", data, id);
+    }
+
 }
